@@ -93,6 +93,8 @@ class House:
 
     def __str__(self):
             return f'This property is{(' ' if self.get_availability() else ' not ')}on the market. The property has {self.get_num_room()} rooms and is painted {self.get_colour()}.'
+
+
 ############## Making child Apartment from class house ##################
 
 
