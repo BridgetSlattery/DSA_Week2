@@ -20,10 +20,10 @@ class House:
             self.__colour = clr.lower()
 
     def set_availability(self, avl):
-        if type(avl) == type(True):
-            self.__availability=avl
+        if avl == True:
+            self.__availability= 'for sale'
         else:
-            self.__availability = False
+            self.__availability = 'not for sale'
 
     # Getters
     def get_num_room(self):
@@ -37,5 +37,4 @@ class House:
 
 myHouse=House(20, 'Red', True)
 
-print(f'There is a {myHouse.get_colour()} house with {myHouse.get_num_room()} rooms')
-print('For Sale: ', myHouse.get_availability())
+print(f'There is a {myHouse.get_colour()} house with {myHouse.get_num_room()} rooms, this house is {myHouse.get_availability()}')
